@@ -1,0 +1,1 @@
+bin/web/main/*.parquet filter=lfs diff=lfs merge=lfs -text
