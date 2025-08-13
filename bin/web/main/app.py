@@ -11,7 +11,7 @@ DEMO_SMILES = 'C1=CC(=CC=C1C[C@@H](C(=O)O)N)O'
 def main():
     # Set the page configuration
 
-    app_version = "2025-08-06"
+    app_version = "2025-08-14"
     try:
         git_hash = get_git_short_rev()
     except:
