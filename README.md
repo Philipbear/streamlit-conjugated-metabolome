@@ -1,2 +1,2 @@
 # streamlit-conjugated-metabolome
-app for conjugated metabolome explorer
+web app for Conjugated Metabolome Explorer
