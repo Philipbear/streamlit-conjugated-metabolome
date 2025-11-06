@@ -8,14 +8,14 @@ from pubchem_utils import pubchem_autocomplete, name_to_cid, cid_to_canonical_sm
 
 def main():
     # Set the page configuration
-    app_version = "2025-10-01"
+    app_version = "2025-11-06"
     try:
         git_hash = get_git_short_rev()
     except:
         git_hash = "unknown"
     repo_link = "https://github.com/Philipbear/conjugated_metabolome"
 
-    st.set_page_config(page_title="Conjugated Metabolome Explorer (under development)", layout="wide",
+    st.set_page_config(page_title="Conjugated Metabolome Explorer", layout="wide",
                        menu_items={"About": (f"**App Version**: {app_version} | "
                                              f"[**Git Hash**: {git_hash}]({repo_link}/commit/{git_hash})")}
                        )
@@ -464,7 +464,7 @@ def render_sidebar():
         This app allows you to explore potential metabolite conjugations using compound names or SMILES strings.
         
         ### 📝 Citation
-        Please cite [our work](https://github.com/Philipbear/conjugated_metabolome) if you find it useful.
+        S. Xing et al. [Navigating the pan-repository conjugated metabolome](https://github.com/Philipbear/conjugated_metabolome).
         
         ### 📧 Contact
         For questions or feedback, please contact Shipei Xing at
@@ -486,7 +486,7 @@ def render_footer():
     st.markdown("""
     ### Notes
     1. This web app does not include all conjugation results. For more comprehensive results, please refer to [our paper](https://doi.org/10.1101/2025.01.01.123456) and [Zenodo repository](https://zenodo.org/record/1234567).
-    2. Reference spectra from [GNPS](https://external.gnps2.org/gnpslibrary) have USI links. Some spectra from [MassBank](https://github.com/MassBank/MassBank-data/releases) and all NIST20 spectra do not have USIs available.
+    2. Only reference MS/MS spectra from [GNPS](https://external.gnps2.org/gnpslibrary) have universal spectrum identifier (USI) links. Reference spectra from other libraries do not have USI links, and thus mirror plot links are not available for those entries.
     3. All search results are based on 2D chemical structure.
     
     © All rights reserved, Shipei Xing 2025
