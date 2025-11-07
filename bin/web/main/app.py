@@ -484,9 +484,14 @@ def render_footer():
     """Render the footer with notes"""
     st.markdown("---")
     st.markdown("""
+    ### Authors
+    - Shipei Xing, PhD, University of California San Diego
+    - Wilhan Nunes, PhD, University of California San Diego
+    - Mingxun Wang, PhD, University of California Riverside
+                
     ### Notes
-    1. This web app does not include all conjugation results. For more comprehensive results, please refer to [our paper](https://doi.org/10.1101/2025.01.01.123456) and [Zenodo repository](https://zenodo.org/record/1234567).
-    2. Only reference MS/MS spectra from [GNPS](https://external.gnps2.org/gnpslibrary) have universal spectrum identifier (USI) links. Reference spectra from other libraries do not have USI links, and thus mirror plot links are not available for those entries.
+    1. This web app does not include all conjugation results. For more comprehensive results, please refer to [our paper](https://doi.org/10.1101/2025.01.01.123456).
+    2. Only reference MS/MS spectra from [GNPS](https://external.gnps2.org/gnpslibrary) have universal spectrum identifiers, for which mirror plots will be shown.
     3. All search results are based on 2D chemical structure.
     
     © All rights reserved, Shipei Xing 2025
