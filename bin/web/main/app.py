@@ -456,7 +456,7 @@ def get_column_config():
 def render_sidebar():
     """Render the sidebar with info and search history"""
     with st.sidebar:
-        st.title("Conjugated Metabolome Explorer (under development)")
+        st.title("Conjugated Metabolome Explorer")
         st.image("https://ccms-ucsd.github.io/GNPSDocumentation/img/logo/GNPS_logo_original_transparent.png", width=150)
         
         st.markdown("""
