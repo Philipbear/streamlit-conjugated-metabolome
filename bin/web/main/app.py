@@ -12,7 +12,7 @@ def initialize_session_state():
 
 def main():
     # Set the page configuration
-    app_version = "2026-01-22"
+    app_version = "2026-01-26"
     try:
         git_hash = get_git_short_rev()
     except:
@@ -55,8 +55,8 @@ def main():
 def render_sidebar(app_version):
     """Render the sidebar with navigation and info"""
     with st.sidebar:
-        st.image("https://ccms-ucsd.github.io/GNPSDocumentation/img/logo/GNPS_logo_original_transparent.png", width=150)
-        st.title("Conjugated Metabolome Explorer")
+        st.image("https://raw.githubusercontent.com/Philipbear/conjugated_metabolome/main/gitfigs/logo.svg", width=300)
+        # st.title("Conjugated Metabolome Explorer")
                 
         st.markdown("---")
         
