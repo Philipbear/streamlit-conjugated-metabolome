@@ -15,3 +15,6 @@ server-compose-production:
 
 attach:
 	docker exec -i -t streamlit-conjugated-metabolome /bin/bash
+
+pull-lfs:
+	git lfs pull
