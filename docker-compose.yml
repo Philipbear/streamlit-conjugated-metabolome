@@ -7,6 +7,7 @@ services:
     container_name: streamlit-conjugated-metabolome
     volumes:
       - ./logs:/app/logs:rw
+      - ./bin/web/main/conjugated_metabolome.db:/app/bin/web/main/conjugated_metabolome.db:ro
     networks:
       - default
       - nginx-net
